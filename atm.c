@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 unsigned int get_money(unsigned short int amount)
 {
   if(amount > 31999)
@@ -17,6 +15,6 @@ unsigned int get_money(unsigned short int amount)
     total_notes += balance / denominations[i];
     balance %= denominations[i];
   }
-  
+
   return total_notes;
 }
